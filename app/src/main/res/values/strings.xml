@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Remind Me Please</string>
+    <string name="EditReminder">Edit Reminder</string>
+    <string name="DeleteReminder">Delete Reminder</string>
+    <string name="NewReminder">New Reminder</string>
+    <string name="ChangeTheme">Change Theme</string>
+    <string name="Exit">Exit</string>
+    <string name="Edit">Edit</string>
+    <string name="Options">Options</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Important">Important</string>
+    <string name="menuDots">&#8942;</string>
+    <string name="SetReminderDescription">Set Reminder Description</string>
+    <string name="ReminderDescriptionHint">I\'ve an assignment due Tomorrow &#8230;</string>
+    <string name="MaxCharCount">20</string>
+    <string name="Required">*</string>
+
+</resources>

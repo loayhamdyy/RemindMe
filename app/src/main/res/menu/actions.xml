@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- menu group -->
+    <group android:id="@+id/actions_group">
+        <item android:id="@+id/NewReminder"
+            android:title="@string/NewReminder" />
+        <item android:id="@+id/ChangeTheme"
+            android:title="@string/ChangeTheme" />
+        <item android:id="@+id/Exit"
+            android:title="@string/Exit" />
+    </group>
+</menu>

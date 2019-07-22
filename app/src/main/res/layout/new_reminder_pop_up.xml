@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/DarkTheme"
+    android:padding="5dp">
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:timePickerMode="spinner">
+    </TimePicker>
+
+    <DatePicker
+        android:id="@+id/DatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false">
+    </DatePicker>
+
+    <TextView
+        android:id="@+id/SetReminderDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DatePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="@string/SetReminderDescription"
+        android:textSize="18sp"
+        android:textColor="@color/White"/>
+
+    <TextView
+        android:id="@+id/CharCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/SetReminderDescription"
+        app:layout_constraintEnd_toEndOf="@+id/ReminderDescription"
+        app:layout_constraintBottom_toTopOf="@+id/ReminderDescription"
+        android:layout_marginBottom="5dp"
+        android:textSize="13sp"
+        android:text="@string/MaxCharCount"
+        android:textColor="@color/White"/>
+
+    <TextView
+        android:id="@+id/Required"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/ReminderDescription"
+        app:layout_constraintBottom_toTopOf="@+id/ReminderDescription"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="13sp"
+        android:text="@string/Required"
+        android:textColor="@color/White"/>
+
+    <EditText
+        android:id="@+id/ReminderDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SetReminderDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="0.05"
+        android:hint="@string/ReminderDescriptionHint"
+        android:textColorHint="@color/LightGrey"
+        android:textColor="@color/White"
+        android:maxLines="2"
+        android:maxLength="20"/>
+
+    <TextView
+        android:id="@+id/Important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/ReminderDescription"
+        app:layout_constraintTop_toBottomOf="@+id/ReminderDescription"
+        android:layout_marginTop="5dp"
+        android:text="@string/Important"
+        android:textSize="18sp"
+        android:textColor="@color/White"/>
+
+    <CheckBox
+        android:id="@+id/IsImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/Important"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintTop_toTopOf="@+id/Important"
+        app:layout_constraintBottom_toBottomOf="@+id/Important"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/IsImportant"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/AddReminder"
+            android:background="@drawable/disabled_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:text="@string/Add"/>
+
+        <Button
+            android:id="@+id/Cancel"
+            android:background="@drawable/enabled_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:text="@string/Cancel"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

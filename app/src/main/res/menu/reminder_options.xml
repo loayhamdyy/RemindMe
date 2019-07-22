@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:title="@string/Options"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <group android:id="@+id/actions_group">
+        <item android:id="@+id/EditReminder"
+            android:title="@string/EditReminder" />
+        <item android:id="@+id/DeleteReminder"
+            android:title="@string/DeleteReminder" />
+    </group>
+
+</menu>

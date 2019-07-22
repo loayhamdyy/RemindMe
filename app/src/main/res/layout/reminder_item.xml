@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/reminderDescription"
+        app:layout_constraintBottom_toBottomOf="@id/reminderDescription"
+        app:layout_constraintHorizontal_bias="0.02"
+        android:src="@drawable/star_2x"
+        android:tint="@color/Gold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/reminderDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:maxLines="1"
+        android:textColor="@color/White"
+        android:textSize="17sp"
+        android:maxLength="25"/>
+
+
+    <TextView
+        android:id="@+id/reminderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"
+        android:textColor="@color/White"
+        android:textSize="12.5sp"/>
+
+    <TextView
+        android:id="@+id/itemOptions"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="0dp"
+        android:text="@string/menuDots"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+</android.support.constraint.ConstraintLayout>
